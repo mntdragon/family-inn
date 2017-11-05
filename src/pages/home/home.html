@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FAM365</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-searchbar
+  [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()">
+</ion-searchbar>
+
+  <div *ngIf="searching" class="spinner-container">
+    <ion-spinner></ion-spinner>
+</div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-33>
+        <ion-card *ngFor="let activity of activities">
+          <ion-item>
+           <img src={{activity.image}}/>
+            <h2>{{activity.activity}}</h2>
+            <ion-badge color="twitter">{{activity.content.age}}</ion-badge>
+          </ion-item>
+          <ion-card-content>
+            {{activity.text}}
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end (click)="openModal(activity.id)">
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>
+<!-- <ion-col width-33>
+        <ion-card>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/cardimg1.jpg">
+            </ion-avatar>
+            <h2>Protype</h2>
+            <p>October 4, 2017</p>
+          </ion-item>
+          <ion-card-content>
+            This will become a nice prototype !! It's going to help a lot of parents !!
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end>
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-33>
+        <ion-card>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/cardimg1.jpg">
+            </ion-avatar>
+            <h2>Protype</h2>
+            <p>October 4, 2017</p>
+          </ion-item>
+          <ion-card-content>
+            This will become a nice prototype !! It's going to help a lot of parents !!
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end>
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>
+      <ion-col width-33>
+        <ion-card>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/cardimg1.jpg">
+            </ion-avatar>
+            <h2>Protype</h2>
+            <p>October 4, 2017</p>
+          </ion-item>
+          <ion-card-content>
+            This will become a nice prototype !! It's going to help a lot of parents !!
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end>
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-33>
+        <ion-card>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/cardimg1.jpg">
+            </ion-avatar>
+            <h2>Protype</h2>
+            <p>October 4, 2017</p>
+          </ion-item>
+          <ion-card-content>
+            This will become a nice prototype !! It's going to help a lot of parents !!
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end>
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>
+      <ion-col width-33>
+        <ion-card>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="img/cardimg1.jpg">
+            </ion-avatar>
+            <h2>Protype</h2>
+            <p>October 4, 2017</p>
+          </ion-item>
+          <ion-card-content>
+            This will become a nice prototype !! It's going to help a lot of parents !!
+          </ion-card-content>
+          <button ion-button clear item-end icon-right end>
+            More
+            <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+          </button>
+        </ion-card>
+      </ion-col>-->
+    </ion-row>
+  </ion-grid>
+</ion-content>

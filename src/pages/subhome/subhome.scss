@@ -1,0 +1,31 @@
+page-subhome{
+
+ion-img {
+      min-width: 100% !important;
+      min-height: 39%;
+  }
+h2{
+text-align: center;
+text-transform: uppercase;
+text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+p{
+  margin: 1em !important;
+}
+.ion-ios-star:before { //icon star
+    content: "\f4b3";
+    color: #eed800!important;
+}
+
+.ion-star:before { //icon star
+    content: "\f4b3";
+    color: #eed800!important;
+}
+
+.ion-md-star:before {
+    color: #eed800!important;
+}
+
+
+}

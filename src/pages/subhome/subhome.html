@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Application name here</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- <ion-content>
+<button ion-button block outline>Water Balloon Relay</button>
+<button ion-button block outline>Water Balloon Relay</button>
+<button ion-button block outline>Pantyhose Bowling</button>
+<button ion-button block outline>Tipsy Waiter</button>
+<button ion-button block outline>Jumbo Beer Pong</button>
+
+
+</ion-content> -->
+
+<ion-content padding *ngIf="activities != 0">
+  <ion-img src={{activities.content.img}}></ion-img>
+<h2>{{activities.content.title}}</h2>
+
+<ion-card>
+  <ion-card-header>
+    <ion-icon class="star" name="star"></ion-icon> GAME: LOREM IPSUM
+  </ion-card-header>
+<p>{{activities.content.des}}</p>
+<p>{{activities.content.instructions}}</p>
+</ion-card>
+
+<ion-fab right bottom>
+    <button ion-fab color="dark"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

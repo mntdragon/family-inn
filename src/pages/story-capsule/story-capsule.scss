@@ -1,0 +1,47 @@
+page-story-capsule {
+  ion-slide.swiper-slide {
+        left: 25%;
+    }
+  ion-note{
+    color: gray !important;
+  }
+  ion-fab[top][edge] {
+    top: 0;
+  }
+  h4{
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    text-align: left;
+    font-weight: 900 !important;
+    color: MediumSeaGreen;
+    font-size: 1.2em !important;
+  }
+  h2{
+    font-weight: 600 !important;
+  }
+    .slide-zoom {
+        background: #e6e6e6;
+    }
+
+    .thumb-img {
+        padding: 10px;
+    }
+    .social-cards ion-col {
+      padding: 0;
+    }
+    .ion-md-star{
+      color: yellow !important;
+    }
+
+    .ion-md-star:before {
+      content: "\f384";
+      color: yellow!important;
+  }
+  .card-ios p {
+    color: rgb(8, 8, 8);
+  }
+  .fab[mini] {
+    margin: 0.2em !important;
+  }
+
+}

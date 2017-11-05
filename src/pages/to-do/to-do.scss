@@ -1,0 +1,64 @@
+page-to-do {
+
+ion-list-header{
+  color: #178124!important;
+	font-size: 24px!important;
+  font-weight: 400;
+	text-transform: uppercase;
+  text-align: center;
+}
+.labelclass{
+  white-space: pre-wrap!important;
+}
+ion-segment-button{
+  //max-width: 25px;
+  border-style: solid;
+}
+// ion-fab[top][edge] {
+//   top: 0!important;
+// }
+// ion-fab[top] {
+//     top: 0!important;
+// }
+.label-ios, .label-md {
+    margin: 15px 8px 15px 0;
+}
+.cat{
+  color: #ee009e!important;
+}
+.segment-button {
+  border-style: none;
+  border-color: #a8eaa9!important;
+  color: #00a113!important;
+  border-width: thin;
+}
+
+.segment-button:first-of-type {
+//  border-radius: 90px 90px 90px 90px;
+  // margin-right: 0px;
+  margin-left: 0px;
+  line-height: 3.4rem;
+  height: 100%;
+  width: 100%}
+.segment-button:not(:first-of-type) {
+  //border-radius: 90px 90px 90px 90px;
+ // margin-right: 0px;
+  margin-left: 20px;
+  line-height: 3.4rem;
+  height: 100%;
+  width: 100%;}
+.segment-button:last-of-type {
+  //border-radius: 90px 90px 90px 90px;
+  margin-right: 0px;
+  margin-left: 20px;
+  line-height: 3.4rem;
+  height: 100%;
+  width: 100%;}
+
+
+ .segment-activated{
+  background-color: #0ec724!important;
+  color: #ffffff !important;
+}
+
+}

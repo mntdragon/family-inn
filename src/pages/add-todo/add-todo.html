@@ -1,0 +1,30 @@
+<!--
+  Generated template for the AddTodoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content class="main-view">
+  <div class="modal_content">
+  <ion-item>
+         <ion-input [(ngModel)]="todo" placeholder="Insert some todo here here" type="text"></ion-input>
+     </ion-item>
+     <ion-list no-margin>
+       <ion-item>
+         <ion-label>Tag people</ion-label>
+         <ion-select [(ngModel)]="myParam" multiple="true">
+           <ion-option value="Zed">Zed (son)</ion-option>
+           <ion-option value="Hani">Hani (daughter)</ion-option>
+           <ion-option value="Abel">Abel (Grandpa)</ion-option>
+           <ion-option value="Amie">Amie (Grandma)</ion-option>
+           <ion-option value="Mia">Mia (mom)</ion-option>
+           <ion-option value="Ian">Ian (dad)</ion-option>
+         </ion-select>
+       </ion-item>
+     </ion-list>
+     <button ion-button full (click)="addTodo(myParam)">ADD</button>
+   </div>
+</ion-content>
