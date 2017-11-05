@@ -24,3 +24,20 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+## installation instruction
+
+* Clone this repository.
+* Go to the project.
+```
+cd Ionic3-recording
+```
+
+* Plug and enable USB Debugging in your device.
+* Follow those steps below to run the application:
+```bash
+$ npm install -g ionic cordova
+$ npm install
+$ ionic cordova prepare
+$ ionic cordova platform add android
+$ ionic cordova run android
+```
